@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.it.dubbo</groupId>
+    <artifactId>dubbo-demo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>dubbo-service-consumer</artifactId>
+  
+  <properties>
+		<dubbo.version>2.6.2</dubbo.version>
+		<zkclient.version>0.2</zkclient.version>
+		<zookeeper.version>3.4.9</zookeeper.version>
+		<curator-framework.version>2.12.0</curator-framework.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.it.dubbo</groupId>
+			<artifactId>dubbo-service-api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<!-- Dubbo -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>dubbo</artifactId>
+			<version>${dubbo.version}</version>
+		</dependency>
+
+		<!-- ZK -->
+		<dependency>
+			<groupId>org.apache.zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+			<version>${zookeeper.version}</version>
+		</dependency>
+
+		<dependency>
+		  <groupId>org.apache.curator</groupId>
+		  <artifactId>curator-client</artifactId>
+		  <version>${curator-framework.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.curator</groupId>
+			<artifactId>curator-framework</artifactId>
+			<version>${curator-framework.version}</version>
+		</dependency>
+	</dependencies>
+</project>

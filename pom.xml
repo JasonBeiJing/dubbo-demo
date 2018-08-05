@@ -1,0 +1,27 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.it.dubbo</groupId>
+	<artifactId>dubbo-demo</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<modules>
+		<module>dubbo-service-api</module>
+		<module>dubbo-service-provider</module>
+		<module>dubbo-service-consumer</module>
+		<module>dubbo-service-provider-springboot</module>
+		<module>dubbo-service-consumer-springboot</module>
+	</modules>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<java.source.version>1.8</java.source.version>
+		<java.target.version>1.8</java.target.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<maven.compiler.version>1.8</maven.compiler.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+</project>
