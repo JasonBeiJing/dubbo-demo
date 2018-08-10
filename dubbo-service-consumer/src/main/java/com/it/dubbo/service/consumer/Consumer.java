@@ -10,10 +10,15 @@ public class Consumer {
 
 	public static void main(String[] args) {
 		ReferenceConfig<HelloService> referenceConfig = new ReferenceConfig<HelloService>();
-        referenceConfig.setApplication(new ApplicationConfig("first-dubbo-consumer"));
+       
+		referenceConfig.setApplication(new ApplicationConfig("first-dubbo-consumer"));
         referenceConfig.setRegistry(new RegistryConfig("zookeeper://127.0.0.1:2181"));
+       //referenceConfig.setConsumer(consumer);
+        
         referenceConfig.setInterface(HelloService.class);
         HelloService helloService = referenceConfig.get();
+        
+        //referenceConfig.setMethods(methods); MethodConfig --> ArgumentConfig
         
         ConsumerService cs = new ConsumerService();
         cs.setHelloService(helloService);
